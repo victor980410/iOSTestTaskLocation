@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSTestTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ny4-om-xH2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kPE-hG-aes">
+                                <rect key="frame" x="47" y="692" width="320" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GW-Z9-TJU">
+                                        <rect key="frame" x="10" y="41" width="300" height="89"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsK-mk-yZp">
+                                        <rect key="frame" x="10" y="10" width="300" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="H3B-tE-xOI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="HcV-dD-RBu">
+                                        <rect key="frame" x="150" y="60" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.7015845070422535" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="zsK-mk-yZp" firstAttribute="leading" secondItem="kPE-hG-aes" secondAttribute="leading" constant="10" id="Ji9-8a-JFH"/>
+                                    <constraint firstAttribute="bottom" secondItem="6GW-Z9-TJU" secondAttribute="bottom" constant="10" id="LYI-8c-yRo"/>
+                                    <constraint firstAttribute="trailing" secondItem="zsK-mk-yZp" secondAttribute="trailing" constant="10" id="M0c-N4-S3e"/>
+                                    <constraint firstItem="HcV-dD-RBu" firstAttribute="centerY" secondItem="kPE-hG-aes" secondAttribute="centerY" id="VW0-h9-oA4"/>
+                                    <constraint firstItem="HcV-dD-RBu" firstAttribute="centerX" secondItem="kPE-hG-aes" secondAttribute="centerX" id="Vij-TQ-b1j"/>
+                                    <constraint firstAttribute="trailing" secondItem="6GW-Z9-TJU" secondAttribute="trailing" constant="10" id="ZaM-9E-txx"/>
+                                    <constraint firstItem="6GW-Z9-TJU" firstAttribute="leading" secondItem="kPE-hG-aes" secondAttribute="leading" constant="10" id="ZlY-Ys-dxA"/>
+                                    <constraint firstItem="6GW-Z9-TJU" firstAttribute="top" secondItem="zsK-mk-yZp" secondAttribute="bottom" constant="10" id="jQE-dk-f3Y"/>
+                                    <constraint firstItem="zsK-mk-yZp" firstAttribute="top" secondItem="kPE-hG-aes" secondAttribute="top" constant="10" id="nhy-hv-j4N"/>
+                                    <constraint firstAttribute="height" constant="140" id="yHZ-Eq-U5H"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ny4-om-xH2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7FF-HC-zpi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kPE-hG-aes" secondAttribute="bottom" constant="30" id="7SA-MX-sxW"/>
+                            <constraint firstItem="kPE-hG-aes" firstAttribute="centerX" secondItem="Ny4-om-xH2" secondAttribute="centerX" id="88k-hQ-hrK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ny4-om-xH2" secondAttribute="trailing" id="A8v-03-paO"/>
+                            <constraint firstItem="Ny4-om-xH2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="AnM-MH-oWG"/>
+                            <constraint firstAttribute="bottom" secondItem="Ny4-om-xH2" secondAttribute="bottom" id="Ses-hB-TVB"/>
+                            <constraint firstItem="kPE-hG-aes" firstAttribute="width" secondItem="Ny4-om-xH2" secondAttribute="height" multiplier="5:14" id="bzD-kY-IhA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="HcV-dD-RBu" id="XNZ-p7-j2R"/>
+                        <outlet property="addressLabel" destination="6GW-Z9-TJU" id="LCd-uM-2xp"/>
+                        <outlet property="mapView" destination="Ny4-om-xH2" id="Jch-do-0Eu"/>
+                        <outlet property="titleLabel" destination="zsK-mk-yZp" id="OEJ-iT-gSU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="79.6875"/>
+        </scene>
+    </scenes>
+</document>
